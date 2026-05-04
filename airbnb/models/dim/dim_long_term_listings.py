@@ -3,3 +3,5 @@ def model(dbt, session):
 
     return (listings.filter(listings["MINIMUM_NIGHTS"] >= 30)
                    .select("LISTING_ID", "LISTING_NAME", "PRICE"))
+
+
